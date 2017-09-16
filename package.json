@@ -1,0 +1,21 @@
+{
+  "name": "server-side-rendering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup client.mjs --output.format iife --output.file bundle.js",
+    "prestart": "npm run build",
+    "start": "nodemon --experimental-modules server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Matt Gale <matt@littleball.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^1.12.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "rollup": "^0.50.0"
+  }
+}
